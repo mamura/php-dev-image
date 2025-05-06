@@ -30,10 +30,7 @@ RUN add-apt-repository ppa:ondrej/php \
 WORKDIR /src
 
 # NodeJS
-RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash \
-    && source ~/.bashrc
-
-RUN nvm install v20.18.0
+RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash 
 
 # NGINX
 RUN apt-get -y install nginx
